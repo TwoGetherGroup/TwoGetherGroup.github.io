@@ -21520,4 +21520,16 @@ span.flatpickr-weekday {
   box-shadow: -10px 0 0 #cb0c9f;
 }
 
+#zoom-hover img {
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #ffd18c;
+  transition: opacity 1s ease-in-out, transform 1s, box-shadow 0.8s;
+}
+
+#zoom-hover img:hover {
+  box-shadow: 5px 5px 20px #ecff7f;
+	opacity : 90%;
+	transform: scale(1.1);
+}
+
 /*# sourceMappingURL=kit-free.css.map */
