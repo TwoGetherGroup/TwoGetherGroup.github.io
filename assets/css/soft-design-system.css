@@ -8142,7 +8142,7 @@ fieldset:disabled .btn {
 
 .ms-n3 {
   margin-left: -1rem !important;
-}
+} 
 
 .ms-n4 {
   margin-left: -1.5rem !important;
@@ -13460,7 +13460,7 @@ fieldset:disabled .btn {
   z-index: 1;
   display: block;
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0);
   border-radius: 1rem;
 }
 
