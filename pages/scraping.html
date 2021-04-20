@@ -20,7 +20,7 @@ Coded by www.creative-tim.com
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    TwoGether - Hubungi kami
+    TwoGether - Data Scraping
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -32,10 +32,37 @@ Coded by www.creative-tim.com
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/soft-design-system.css?v=1.0.3" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script type ="text/javascript">
+        $(function(){
+
+            //mengambil data dari file headline.txt
+            $.get('data.json',function(obj){
+                var str = "<table border='1' cellspacing='0' cellpadding='5' align='center'>";
+                str+= "<tr align='center' bgcolor='#63b3ed'><td>No</td><td>Judul Headline</td><td>Kategori</td><td>Waktu Publish</td><td>Waktu Scraping</td></tr>";
+                //looping data headline
+                $.each(obj,function(n,data){
+                    
+                    //isi tabel
+                    str+= "<tr><td>"+(n+1)+"</td>";
+                    str+= "<td>"+data.judul+"</td>";
+                    str+= "<td>"+data.kategori+"</td>";
+                    str+= "<td>"+data.waktu_publish+"</td>";
+                    str+= "<td>"+data.waktu_scraping+"</td></tr>";
+                });
+                //tag tabel penutup
+                str+="</table>";
+                //Display semua headline ke html
+                $('#data_json').html(str);
+            });
+            
+        });
+        
+    </script>
 </head>
 
-<body class="contact-us">
-  <!-- Navbar -->
+<body class="blog-author bg-gray-100">
+  <!-- Navbar Light -->
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
@@ -102,77 +129,12 @@ Coded by www.creative-tim.com
       </div>
     </div>
   </div>
-  <!-- -------- START HEADER 8 w/ card over right bg image ------- -->
-  <header>
-    <div class="page-header section-height-85">
-      <div>
-        <img class="position-absolute fixed-top ms-auto w-50 h-100 z-index-0 d-none d-sm-none d-md-block border-radius-section border-top-end-radius-0 border-top-start-radius-0 border-bottom-end-radius-0" src="../assets/img/curved-images/curved8.jpg">
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 d-flex justify-content-center flex-column">
-            <div class="card d-flex blur justify-content-center p-4 shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
-              <div class="text-center">
-                <h3 class="text-gradient text-primary">Hubungi kami</h3>
-                <p class="mb-0">
-                  Untuk pertanyaan lebih lanjut, termasuk peluang kerja sama, harap kirim email ke muhammadrasyidf@gmail.com atau isi form dibawah ini.
-                </p>
-              </div>
-              <form role="form" id="contact-form" method="post" autocomplete="off">
-                <div class="card-body pb-2">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <label>Nama lengkap</label>
-                      <div class="input-group mb-4">
-                        <input class="form-control" placeholder="Nama lengkap" aria-label="Nama lengkap" type="text" required>
-                      </div>
-                    </div>
-                    <div class="col-md-6 ps-md-2">
-                      <label>Email</label>
-                      <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Email" type="email">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group mb-0 mt-md-0 mt-4">
-                    <label>Pesan</label>
-                    <textarea name="message" class="form-control" id="message" rows="6"></textarea>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 text-center">
-                      <button type="button" class="btn bg-gradient-primary mt-3 mb-0" data-bs-toggle="modal" data-bs-target="#submitMessage">Kirim</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="submitMessage" tabindex="-1" aria-labelledby="submitMessageLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="submitMessageLabel">Terima kasih telah mengisi form!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Sebenarnya form yang telah diisi tidak terhubung dengan alamat email atau database manapun.
-            <br><br>
-            Jadi mohon maaf karena fitur ini belum bisa digunakan. Sebagai gantinya kami memunculkan modal ketika tekan tombol "Kirim". Terima kasih.
-          </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn bg-gradient-dark" data-bs-dismiss="modal">Kembali</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </header>
-  <!-- -------- END HEADER 8 w/ card over right bg image ------- -->
+  <!-- End Navbar -->
+  
+  <!-- START USER PROFILES -->
+  <div id="data_json"></div>
+  
+  <!-- -------- START FOOTER 5 w/ DARK BACKGROUND ------- -->
   <footer class="footer pt-5 mt-5">
     <hr class="horizontal dark mb-5">
     <div class="container">
@@ -199,6 +161,7 @@ Coded by www.creative-tim.com
       </div>
     </div>
   </footer>
+  <!-- -------- END FOOTER 5 w/ DARK BACKGROUND ------- -->
   <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
