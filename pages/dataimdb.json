@@ -1,0 +1,802 @@
+[
+      {
+            "No": "1",
+            "Judul": "Mortal Kombat",
+            "Tahun": "2021",
+            "Rating": "6.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BY2ZlNWIxODMtN2YwZi00ZjNmLWIyN2UtZTFkYmZkNDQyNTAyXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "2",
+            "Judul": "Nobody",
+            "Tahun": "2021",
+            "Rating": "7.5",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMjM5YTRlZmUtZGVmYi00ZjE2LWIyNzAtOWVhMDk1MDdkYzhjXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "3",
+            "Judul": "Shang-Chi and the Legend of the Ten Rings",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYzM0YjJlMWEtZTg0MS00NjM4LWJkMDktN2VmZGU2ZjQ1YjI2XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "4",
+            "Judul": "Love and Monsters",
+            "Tahun": "2020",
+            "Rating": "7.0",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYWVkMWEyMDUtZTVmOC00MTYxLWE1ZTUtNjk4M2IzMjY2OTIxXkEyXkFqcGdeQXVyMDk5Mzc5MQ@@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "5",
+            "Judul": "Promising Young Woman",
+            "Tahun": "2020",
+            "Rating": "7.5",
+            "Image": "https://m.media-amazon.com/images/M/MV5BOTI0OGQzOWEtZWY1ZC00MTFjLThmODAtYWQ3MDk4ZGEyNGYyXkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "6",
+            "Judul": "Stowaway",
+            "Tahun": "2021",
+            "Rating": "5.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMWYwMWQxMmUtNjU3MS00NjIwLTllYWMtNzcxYzRkMWYyYTkwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "7",
+            "Judul": "Godzilla vs. Kong",
+            "Tahun": "2021",
+            "Rating": "6.5",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZmYzMzU4NjctNDI0Mi00MGExLWI3ZDQtYzQzYThmYzc2ZmNjXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "8",
+            "Judul": "The Courier",
+            "Tahun": "2020",
+            "Rating": "7.1",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYjg4YTJlNzMtY2U0OC00N2FjLWI0ZTgtNGM1NDRhMWNhZmRkXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "9",
+            "Judul": "Zack Snyder's Justice League",
+            "Tahun": "2021",
+            "Rating": "8.1",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "10",
+            "Judul": "Thunder Force",
+            "Tahun": "2021",
+            "Rating": "4.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMWZkM2I2NjEtNWM0Mi00MTgwLWJlYTAtYmNkZWYzNmQ1ZTBiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "11",
+            "Judul": "Nomadland",
+            "Tahun": "2020",
+            "Rating": "7.5",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMDRiZWUxNmItNDU5Yy00ODNmLTk0M2ItZjQzZTA5OTJkZjkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "12",
+            "Judul": "The Father",
+            "Tahun": "2020",
+            "Rating": "8.3",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZGJhNWRiOWQtMjI4OS00ZjcxLTgwMTAtMzQ2ODkxY2JkOTVlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "13",
+            "Judul": "Sound of Metal",
+            "Tahun": "2019",
+            "Rating": "7.8",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "14",
+            "Judul": "F9",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMjI0NmFkYzEtNzU2YS00NTg5LWIwYmMtNmQ1MTU0OGJjOTMxXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "15",
+            "Judul": "Synchronic",
+            "Tahun": "2019",
+            "Rating": "6.2",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYWVlNjUxNzctZTI3NC00MDMzLWFlMjAtYmI2NWE5ZWJhYjZmXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "16",
+            "Judul": "The Conjuring: The Devil Made Me Do It",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYzQxMjVkZjEtMDQxYy00MGIwLWE1NjYtYzZkZmU1NTFlZGFlXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_UY67_CR4,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "17",
+            "Judul": "Mortal Kombat",
+            "Tahun": "1995",
+            "Rating": "5.8",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNjY5NTEzZGItMGY3My00NzE4LThkYTUtYjJkNzk3MDBiMWE3XkEyXkFqcGdeQXVyNzg5MDE1MDk@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "18",
+            "Judul": "Army of the Dead",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNGY0NzgzYzctYWQwMC00MzM2LThjNGMtZjFjMWUyNzg0ZmM0XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "19",
+            "Judul": "The Marksman",
+            "Tahun": "2021",
+            "Rating": "5.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BODdlNThhMTUtNmU1OS00ZjM3LWE1ZjMtOWViN2RhYWRiZTg5XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "20",
+            "Judul": "The Suicide Squad",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNGM3YzdlOWYtNjViZS00MTE2LWE1MWUtZmE2ZTcxZjcyMmU3XkEyXkFqcGdeQXVyODEyMTI1MjA@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "21",
+            "Judul": "Minari",
+            "Tahun": "2020",
+            "Rating": "7.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNWEzOTNjNDgtZDhhYS00ODAxLWIzNGMtYjU3OGZhYmI3ZDU4XkEyXkFqcGdeQXVyMTAzNjk5MDI4._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "22",
+            "Judul": "The Trial of the Chicago 7",
+            "Tahun": "2020",
+            "Rating": "7.8",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYjYzOGE1MjUtODgyMy00ZDAxLTljYTgtNzk0Njg2YWQwMTZhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "23",
+            "Judul": "Riders of Justice",
+            "Tahun": "2020",
+            "Rating": "7.7",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZWVkNTFmNTQtMGRiZC00NjAwLThjYTgtYmI3ZjA2Zjc1MTM1XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "24",
+            "Judul": "Mank",
+            "Tahun": "2020",
+            "Rating": "6.9",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZTllMjI0ZGYtM2FmZC00ZmY4LTlkNTYtZThlOWQ1OGQyZTA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "25",
+            "Judul": "Black Widow",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYjdmODAzNTctNWU1NS00ZmRiLWFiM2YtMjAyNzgzZWJlZjhlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "26",
+            "Judul": "Avengers: Endgame",
+            "Tahun": "2019",
+            "Rating": "8.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "27",
+            "Judul": "Monday",
+            "Tahun": "2020",
+            "Rating": "6.1",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYTg4NWQ4ODEtMmQ3Zi00N2JlLTgzNDEtMDMzYjNkODUzODE5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "28",
+            "Judul": "Vanquish",
+            "Tahun": "2021",
+            "Rating": "2.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZWEzZDdjMjAtOWM1Zi00MTZkLWE5OTEtMDg2YmNmODFjOTBjXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "29",
+            "Judul": "Raya and the Last Dragon",
+            "Tahun": "2021",
+            "Rating": "7.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZWNiOTc4NGItNGY4YS00ZGNkLThkOWEtMDE2ODcxODEwNjkwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "30",
+            "Judul": "Tenet",
+            "Tahun": "2020",
+            "Rating": "7.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "31",
+            "Judul": "Judas and the Black Messiah",
+            "Tahun": "2021",
+            "Rating": "7.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BOTYwNWNmM2UtNDhlOC00ZGQzLWI1MTMtMmZlMTFjM2Y1N2ZhXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "32",
+            "Judul": "Spider-Man: No Way Home",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNTMxOGI4OGMtMTgwMy00NmFjLWIyOTUtYjQ0OGQ4Mjk0YjNjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "33",
+            "Judul": "The New Mutants",
+            "Tahun": "2020",
+            "Rating": "5.3",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZDQ2NTdmNDgtMGIwMS00ODE2LTk5M2EtZGZhYzc4MWRlNTU3XkEyXkFqcGdeQXVyNTc4MjczMTM@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "34",
+            "Judul": "Another Round",
+            "Tahun": "2020",
+            "Rating": "7.8",
+            "Image": "https://m.media-amazon.com/images/M/MV5BOTNjM2Y2ZjgtMDc5NS00MDQ1LTgyNGYtYzYwMTAyNWQwYTMyXkEyXkFqcGdeQXVyMjE4NzUxNDA@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "35",
+            "Judul": "The Godfather",
+            "Tahun": "1972",
+            "Rating": "9.2",
+            "Image": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY67_CR1,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "36",
+            "Judul": "Demon Slayer the Movie: Mugen Train",
+            "Tahun": "2020",
+            "Rating": "8.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BODI2NjdlYWItMTE1ZC00YzI2LTlhZGQtNzE3NzA4MWM0ODYzXkEyXkFqcGdeQXVyNjU1OTg4OTM@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "37",
+            "Judul": "Chaos Walking",
+            "Tahun": "2021",
+            "Rating": "5.7",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYTcxYTk3MWQtZThlMS00ZjQ0LTg0NjktNGVkNWM2MTAyYWJmXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "38",
+            "Judul": "Eternals",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BOTYzMTlhM2ItMmFkYi00ZTJhLTg3MWQtNzM1NTRkM2NiNzRjXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_UY67_CR2,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "39",
+            "Judul": "Palm Springs",
+            "Tahun": "2020",
+            "Rating": "7.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYjk0MTgzMmQtZmY2My00NmE5LWExNGUtYjZkNTA3ZDkyMTJiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "40",
+            "Judul": "Wonder Woman 1984",
+            "Tahun": "2020",
+            "Rating": "5.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYTlhNzJjYzYtNGU3My00ZDI5LTgzZDUtYzllYjU1ZmU0YTgwXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "41",
+            "Judul": "Sleepers",
+            "Tahun": "1996",
+            "Rating": "7.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMzk1MmI4NzAtOGRiNS00YjY1LTllNmEtZDhiZDM4MjU2NTMxXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_UY67_CR1,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "42",
+            "Judul": "Dune",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMGFkZGY0NTgtMGEyZC00YzhjLTkyOWItYzMzOTljMDA3ZjU2XkEyXkFqcGdeQXVyNzc4NTU3Njg@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "43",
+            "Judul": "Thor: Love and Thunder",
+            "Tahun": "2022",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMzZjMTIwNjYtYTg0ZS00ZDFjLTk3MDctMTY3ZTgwMjQ4MmFiXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UY67_CR1,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "44",
+            "Judul": "Crimson Peak",
+            "Tahun": "2015",
+            "Rating": "6.5",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZmNkYzk3YjItOTMwYy00ZWViLWIxMTUtZDJiZmY0ZWExYjVmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "45",
+            "Judul": "Rush",
+            "Tahun": "2013",
+            "Rating": "8.1",
+            "Image": "https://m.media-amazon.com/images/M/MV5BOWEwODJmZDItYTNmZC00OGM4LThlNDktOTQzZjIzMGQxODA4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "46",
+            "Judul": "365 Days",
+            "Tahun": "2020",
+            "Rating": "3.2",
+            "Image": "https://m.media-amazon.com/images/M/MV5BODljZTM3ODAtMDc0YS00NmI4LTlmZTUtM2I5MDAzNTQxZmMxXkEyXkFqcGdeQXVyMTEwMTY3NDI@._V1_UY67_CR1,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "47",
+            "Judul": "Soul",
+            "Tahun": "2020",
+            "Rating": "8.1",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZGE1MDg5M2MtNTkyZS00MTY5LTg1YzUtZTlhZmM1Y2EwNmFmXkEyXkFqcGdeQXVyNjA3OTI0MDc@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "48",
+            "Judul": "Once Upon a Time... In Hollywood",
+            "Tahun": "2019",
+            "Rating": "7.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "49",
+            "Judul": "I Care a Lot",
+            "Tahun": "2020",
+            "Rating": "6.3",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYWU2ZTRhNDMtMWYxMC00ZTVkLThjZmItZGY4MGU0YmZlMjJlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "50",
+            "Judul": "The Hitman's Wife's Bodyguard",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNDkzYmNiOWYtNzZkNi00NzNiLTk2MzktY2VmMGY4MmI1NDMwXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_UY67_CR4,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "51",
+            "Judul": "Ajeeb Daastaans",
+            "Tahun": "2021",
+            "Rating": "6.8",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNWJiZmZkMDItODAxZS00MTUxLWE0MmItNTY3YTczNzQ1ZTQ0XkEyXkFqcGdeQXVyMTI1NDAzMzM0._V1_UY67_CR11,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "52",
+            "Judul": "Wrath of Man",
+            "Tahun": "2021",
+            "Rating": "7.5",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNGVkOTlhOTktNjZiNS00NDg3LWIxMDAtZTY5Y2E0YjllN2IxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "53",
+            "Judul": "The Batman",
+            "Tahun": "2022",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZTE2YTY3YTMtM2FlMS00YmI3LTgyMWUtM2FhMWIyZWRmMDk5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR4,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "54",
+            "Judul": "Run",
+            "Tahun": "2020",
+            "Rating": "6.7",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMDcwOWVkZTEtNjJhMy00MGI0LWI3NmYtOGY5NWYxZTQ0YTE5XkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "55",
+            "Judul": "The Shawshank Redemption",
+            "Tahun": "1994",
+            "Rating": "9.3",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "56",
+            "Judul": "Voyagers",
+            "Tahun": "2021",
+            "Rating": "5.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZDIzODQyODQtYzIyYy00MDE5LWJmZjMtMDRmYTRkNzAyZjAzXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "57",
+            "Judul": "Saving Private Ryan",
+            "Tahun": "1998",
+            "Rating": "8.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "58",
+            "Judul": "The Mauritanian",
+            "Tahun": "2021",
+            "Rating": "7.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BODJlMzdlYzItMzRkNi00NTE0LTliZjQtMTllNzkxNDVhNjkxXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "59",
+            "Judul": "Parasite",
+            "Tahun": "2019",
+            "Rating": "8.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "60",
+            "Judul": "Breach",
+            "Tahun": "2020",
+            "Rating": "2.9",
+            "Image": "https://m.media-amazon.com/images/M/MV5BOTk1Y2IyYzAtZGVkNC00Y2U3LWE0MWQtN2E3MTE1OTBjN2QyXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "61",
+            "Judul": "Suicide Squad",
+            "Tahun": "2016",
+            "Rating": "6.0",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMjM1OTMxNzUyM15BMl5BanBnXkFtZTgwNjYzMTIzOTE@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "62",
+            "Judul": "The Comeback Trail",
+            "Tahun": "2020",
+            "Rating": "5.5",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMDg5OTMwMTgtN2NlOS00ZjY5LWI1Y2QtYzEyODgzZDExOGIzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR1,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "63",
+            "Judul": "Unhinged",
+            "Tahun": "2020",
+            "Rating": "6.0",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYjc1Mjg5NjItY2I2MS00NDk3LWI5NGYtNzZjNTNiZmMwZTA3XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "64",
+            "Judul": "Thor: Ragnarok",
+            "Tahun": "2017",
+            "Rating": "7.9",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "65",
+            "Judul": "The Unholy",
+            "Tahun": "2021",
+            "Rating": "5.1",
+            "Image": "https://m.media-amazon.com/images/M/MV5BY2VhOTgxZGEtNGRiZi00NzVkLWE3MGEtZTRjNWEwY2MwZTI0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR4,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "66",
+            "Judul": "The Lord of the Rings: The Fellowship of the Ring",
+            "Tahun": "2001",
+            "Rating": "8.8",
+            "Image": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "67",
+            "Judul": "Mortal Kombat: Annihilation",
+            "Tahun": "1997",
+            "Rating": "3.7",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYjdmZTU3MWMtZTU4ZC00NjYzLTk1NzAtODc2ZDY0ZWNhYWEzL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "68",
+            "Judul": "The Dark Knight",
+            "Tahun": "2008",
+            "Rating": "9.0",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "69",
+            "Judul": "Dazed and Confused",
+            "Tahun": "1993",
+            "Rating": "7.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMTM5MDY5MDQyOV5BMl5BanBnXkFtZTgwMzM3NzMxMDE@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "70",
+            "Judul": "Titanic",
+            "Tahun": "1997",
+            "Rating": "7.8",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "71",
+            "Judul": "Pieces of a Woman",
+            "Tahun": "2020",
+            "Rating": "7.1",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMGE3MzMzOTAtOTExMy00MzFiLWFjNDItN2ZiZmYyYjY2MWUwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "72",
+            "Judul": "Godzilla: King of the Monsters",
+            "Tahun": "2019",
+            "Rating": "6.0",
+            "Image": "https://m.media-amazon.com/images/M/MV5BOGFjYWNkMTMtMTg1ZC00Y2I4LTg0ZTYtN2ZlMzI4MGQwNzg4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "73",
+            "Judul": "Ma Rainey's Black Bottom",
+            "Tahun": "2020",
+            "Rating": "7.0",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNTBlZGY1OTAtN2RjMC00ZThiLWFiZmUtN2VkOGMxNmMyYjQwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "74",
+            "Judul": "Pulp Fiction",
+            "Tahun": "1994",
+            "Rating": "8.9",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "75",
+            "Judul": "Knives Out",
+            "Tahun": "2019",
+            "Rating": "7.9",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "76",
+            "Judul": "The Wolf of Wall Street",
+            "Tahun": "2013",
+            "Rating": "8.2",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "77",
+            "Judul": "Boss Level",
+            "Tahun": "2021",
+            "Rating": "6.9",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNTVkODdiMjAtNmQ5Yy00OThhLTg4MDItYTZlYTFmN2E0M2M1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "78",
+            "Judul": "Interstellar",
+            "Tahun": "2014",
+            "Rating": "8.6",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "79",
+            "Judul": "News of the World",
+            "Tahun": "2020",
+            "Rating": "6.8",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "80",
+            "Judul": "Black Panther",
+            "Tahun": "2018",
+            "Rating": "7.3",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "81",
+            "Judul": "Joker",
+            "Tahun": "2019",
+            "Rating": "8.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "82",
+            "Judul": "Captain Marvel",
+            "Tahun": "2019",
+            "Rating": "6.9",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "83",
+            "Judul": "The Dark Knight Rises",
+            "Tahun": "2012",
+            "Rating": "8.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "84",
+            "Judul": "Why Did You Kill Me?",
+            "Tahun": "2021",
+            "Rating": "5.7",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMTA5ZTdiYmYtZTZlNy00MGZkLWE0NjItNjk3MWUyOTE0NzYzXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_UY67_CR1,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "85",
+            "Judul": "Harry Potter and the Deathly Hallows: Part 2",
+            "Tahun": "2011",
+            "Rating": "8.1",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "86",
+            "Judul": "Wander",
+            "Tahun": "2020",
+            "Rating": "4.9",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMTM5MjI5N2YtNTRjOS00Mzk1LTlmODAtZTJmZjQ5NzNhODNkXkEyXkFqcGdeQXVyNTIwMDQ0NA@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "87",
+            "Judul": "Rio",
+            "Tahun": "2011",
+            "Rating": "6.9",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMTU2MDY3MzAzMl5BMl5BanBnXkFtZTcwMTg0NjM5NA@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "88",
+            "Judul": "Captain America: The First Avenger",
+            "Tahun": "2011",
+            "Rating": "6.9",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMTYzOTc2NzU3N15BMl5BanBnXkFtZTcwNjY3MDE3NQ@@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "89",
+            "Judul": "Waterworld",
+            "Tahun": "1995",
+            "Rating": "6.3",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYzE4NTRmMDYtNWYzYi00YmNkLTk4NDEtYjFmMDc4ODQ3ODY2XkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "90",
+            "Judul": "Midsommar",
+            "Tahun": "2019",
+            "Rating": "7.1",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "91",
+            "Judul": "Coming 2 America",
+            "Tahun": "2021",
+            "Rating": "5.3",
+            "Image": "https://m.media-amazon.com/images/M/MV5BZTMyY2Q2MDctMDFlMS00MWEzLTk1NmEtNDcxNzg1ZGJlNGU5XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "92",
+            "Judul": "Oxygen",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMWQ3N2EzNjYtMzgwYS00YjdmLThmOTUtMzc4NDUxZjZkY2RhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "93",
+            "Judul": "The Little Things",
+            "Tahun": "2021",
+            "Rating": "6.3",
+            "Image": "https://m.media-amazon.com/images/M/MV5BOGFlNTdmYWQtM2IzMi00YTY3LTlmMDQtZDI5NGQ5MjYzZmEwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "94",
+            "Judul": "Avengers: Infinity War",
+            "Tahun": "2018",
+            "Rating": "8.4",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "95",
+            "Judul": "The Little Rascals",
+            "Tahun": "1994",
+            "Rating": "6.3",
+            "Image": "https://m.media-amazon.com/images/M/MV5BYWE1MzdmNmMtNWQwZS00MTVkLTk3MDMtYzVkOWZlOTczMDIwXkEyXkFqcGdeQXVyNjg4NzYzMzA@._V1_UX45_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "96",
+            "Judul": "Concrete Cowboy",
+            "Tahun": "2020",
+            "Rating": "6.3",
+            "Image": "https://m.media-amazon.com/images/M/MV5BODRlNjNhNDctMTJjYS00Y2Q4LTk1MGEtYTdiMDlkYWNkNGFjXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "97",
+            "Judul": "Willy's Wonderland",
+            "Tahun": "2021",
+            "Rating": "5.5",
+            "Image": "https://m.media-amazon.com/images/M/MV5BOTc3ZjVkYTYtMDZiMC00OTliLWE3OTEtYjY5NTBmNGJjYTBmXkEyXkFqcGdeQXVyNDExMzMxNjE@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "98",
+            "Judul": "Captain America: The Winter Soldier",
+            "Tahun": "2014",
+            "Rating": "7.7",
+            "Image": "https://m.media-amazon.com/images/M/MV5BMzA2NDkwODAwM15BMl5BanBnXkFtZTgwODk5MTgzMTE@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "99",
+            "Judul": "The Matrix 4",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BN2I5NzlmMWYtYjIwYy00Y2ZiLWI0ODgtYjAxNDZiZGJlMjlhXkEyXkFqcGdeQXVyMzk1MDQ2MQ@@._V1_UY67_CR28,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      },
+      {
+            "No": "100",
+            "Judul": "The Virtuoso",
+            "Tahun": "2021",
+            "Rating": "",
+            "Image": "https://m.media-amazon.com/images/M/MV5BNjQ3NjkyNGMtMmVkZS00ZGQ0LTgyMjgtNmY1YTAzN2NlM2EzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY67_CR0,0,45,67_AL_.jpg",
+            "Tanggal_Scraping": "27 April 2021, 12:37:52"
+      }
+]
