@@ -1,0 +1,477 @@
+<!--
+=========================================================
+* Soft UI Design System - v1.0.3
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/soft-ui-design-system
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    TwoGether - Data Scraping IMDb
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/soft-design-system.css?v=1.0.3" rel="stylesheet" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', {'packages':['corechart']});
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      var request = new XMLHttpRequest();
+      request.open("GET", "./dataimdb.json", false);
+      request.send(null)
+      var obj = JSON.parse(request.responseText);
+      
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Amount');
+      var count = 0;
+      for (const property in obj) {
+          if(parseInt(obj[property].Tahun, 10) < 2018){
+              count++;
+          }
+      }
+      data.addRow(["<2018", count]);
+      var i;
+      for(i = 2018; i <= 2022; i++){
+          var count = 0;
+          for (const property in obj) {
+              if(parseInt(obj[property].Tahun, 10) == i){
+                  count++;
+              }
+          }
+          data.addRow([i.toString(), count]);
+      }
+      
+      // Set chart options
+      var options = {'title':'Top 100 Movies Released per Year',
+                     'titleTextStyle':{
+                         fontSize: 15
+                     },
+                     'legend':{'position':'none'},
+                     'width':500,
+                     'height':300,
+                   'animation':{
+                       'duration': 1000,
+                       'startup': true,
+                       'easing':'inAndOut'
+                   },
+                   'tooltip':{
+                       'trigger':'selection'
+                   }};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.ColumnChart(document.getElementById('collumn_chart'));
+      chart.draw(data, options);
+    }
+  </script>
+
+<script type="text/javascript">
+
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    var data = new google.visualization.DataTable();
+    var request = new XMLHttpRequest();
+    request.open("GET", "./dataimdb.json", false);
+    request.send(null)
+    var obj = JSON.parse(request.responseText);
+    
+    data.addColumn('string', 'Year');
+    data.addColumn('number', 'Amount');
+    var count = 0;
+    for (const property in obj) {
+        if(parseInt(obj[property].Tahun, 10) < 2018){
+            count++;
+        }
+    }
+    data.addRow(["<2018", count]);
+    var i;
+    for(i = 2018; i <= 2022; i++){
+        var count = 0;
+        for (const property in obj) {
+            if(parseInt(obj[property].Tahun, 10) == i){
+                count++;
+            }
+        }
+        data.addRow([i.toString(), count]);
+    }
+    
+    // Set chart options
+    var options = {'title':'Top 100 Movies Released per Year (by Percentage)',
+                   'titleTextStyle':{
+                      fontSize: 15
+                   },
+                   'width':500,
+                   'height':300,
+                   'tooltip':{
+                       'trigger':'selection'
+                   }};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+    chart.draw(data, options);
+  }
+</script>
+
+<script type="text/javascript">
+
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    var data = new google.visualization.DataTable();
+    var request = new XMLHttpRequest();
+    request.open("GET", "./dataimdb.json", false);
+    request.send(null)
+    var obj = JSON.parse(request.responseText);
+    
+    data.addColumn('string', 'Rating');
+    data.addColumn('number', 'Amount');
+    var count_array = [0,0,0,0,0,0,0,0,0,0,0];
+    for (const property in obj) {
+        var rate = parseInt(obj[property].Rating, 10);
+        if(isNaN(rate)){
+          count_array[0]++;
+        } else {
+          count_array[rate]++;
+        }
+    }
+    data.addRows([
+        ["10", count_array[10]],
+        ["9.x", count_array[9]],
+        ["8.x", count_array[8]],
+        ["7.x", count_array[7]],
+        ["6.x", count_array[6]],
+        ["5.x", count_array[5]],
+        ["4.x", count_array[4]],
+        ["3.x", count_array[3]],
+        ["2.x", count_array[2]],
+        ["1.x", count_array[1]],
+        ["Unrated", count_array[0]]
+      ]);
+    
+    // Set chart options
+    var options = {'title':'Top 100 Movies Rating',
+                   'titleTextStyle':{
+                      fontSize: 15
+                   },
+                   'legend':{'position':'none'},
+                   'width':500,
+                   'height':300,
+                   'animation':{
+                       'duration': 1000,
+                       'startup': true,
+                       'easing':'inAndOut'
+                   },
+                   'tooltip':{
+                       'trigger':'selection'
+                   }};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.BarChart(document.getElementById('bar_chart'));
+    chart.draw(data, options);
+  }
+</script>
+
+<script type="text/javascript">
+
+  // Load the Visualization API and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Callback that creates and populates a data table,
+  // instantiates the pie chart, passes in the data and
+  // draws it.
+  function drawChart() {
+
+    var data = new google.visualization.DataTable();
+    var request = new XMLHttpRequest();
+    request.open("GET", "./dataimdb.json", false);
+    request.send(null)
+    var obj = JSON.parse(request.responseText);
+    
+    data.addColumn('string', 'Rating');
+    data.addColumn('number', 'Amount');
+    var count_rate = [0,0,0,0,0,0];
+    var count_year = [0,0,0,0,0,0];
+
+    //count film by year
+    for (const property in obj) {
+        var rate = parseFloat(obj[property].Rating, 10);
+        if(isNaN(rate)){
+            continue;
+        }
+        var year = parseInt(obj[property].Tahun, 10);
+        switch(year){
+            case 2022:
+            case 2021:
+            case 2020:
+            case 2019:
+            case 2018:
+                count_year[year-2017]++;
+                count_rate[year-2017] += rate;
+                break;
+            default:
+                count_year[0]++;
+                count_rate[0] += rate;
+                break;
+        }
+    }
+    data.addRows([
+        ["<2018", count_rate[0]/count_year[0]],
+        ["2018", count_rate[1]/count_year[1]],
+        ["2019", count_rate[2]/count_year[2]],
+        ["2020", count_rate[3]/count_year[3]],
+        ["2021", count_rate[4]/count_year[4]],
+        ["2022", count_rate[5]/count_year[5]]
+      ]);
+
+    // Set chart options
+    var options = {'title':'Top 100 Movies Rating Average per Year',
+                   'titleTextStyle':{
+                      fontSize: 15
+                   },
+                   'legend':{'position':'none'},
+                   'width':500,
+                   'height':300,
+                   'animation':{
+                       'duration': 1000,
+                       'startup': true,
+                       'easing':'inAndOut'
+                   },
+                   'tooltip':{
+                       'trigger':'selection'
+                   }};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
+    chart.draw(data, options);
+  }
+</script>
+</head>
+
+<body class="blog-author bg-gray-100">
+  <!-- Navbar Light -->
+  <div class="container position-sticky z-index-sticky top-0">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg  blur blur-rounded top-0  z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+          <div class="container-fluid">
+            <a class="navbar-brand font-weight-bolder ms-sm-3" href="../index.html" rel="tooltip" title="Kembali ke Beranda" data-placement="bottom" target="_blank">
+              Proyek 1 - A2
+            </a>
+            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+              <ul class="navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100">
+                <li class="nav-item dropdown dropdown-hover mx-6">
+                  <a class="nav-link ps-6 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+                    Halaman
+                    <img src="../assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-1">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-animation dropdown-md p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
+                    <div class="d-none d-lg-block">
+                      <a href="../pages/about-us.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Tentang Kami</span>
+                      </a>
+                      <a href="../pages/contact-us.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Hubungi Kami</span>
+                      </a>
+                      <a href="../pages/author.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Penulis</span>
+                      </a>
+                      <a href="../pages/scraping.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Data Scraping</span>
+                      </a>
+                      <a href="../pages/scraping2.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Data Scraping 2</span>
+                      </a>
+                      <a href="../pages/datavisual.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Visualisasi Data</span>
+                      </a>
+                    <div class="d-lg-none">
+                      <a href="../pages/about-us.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Tentang Kami</span>
+                      </a>
+                      <a href="../pages/contact-us.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Hubungi Kami</span>
+                      </a>
+                      <a href="../pages/author.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Penulis</span>
+                      </a>
+                      <a href="../pages/scraping.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Data Scraping</span>
+                      </a>
+                      <a href="../pages/scraping2.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Data Scraping 2</span>
+                      </a>
+                      <a href="../pages/datavisual.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Visualisasi Data</span>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item ms-lg-auto">
+                  <a class="nav-link nav-link-icon me-2" href="https://github.com/TwoGetherGroup/TwoGetherGroup.github.io" target="_blank">
+                    <i class="fa fa-github me-1"></i>
+                    <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pergi ke GitHub">GitHub</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+    </div>
+  </div>
+  <!-- End Navbar -->
+  
+  <!-- START USER PROFILES -->
+ <section class="py-sm-7 py-5 position-relative">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+
+          <div class="row">
+            <div class="col-md-3" align="center">
+              <table border='1' cellspacing='0' cellpadding='5' align='center'>
+                <tr align='center' bgcolor='#63b3ed'><td>Jumlah Data</td></tr>
+                <tr align='center'><td>100</td></tr>
+              </table>
+            </div>
+            <div class="col-md-3" align="center">
+              <table border='1' cellspacing='0' cellpadding='5' align='center'>
+                <tr align='center' bgcolor='#63b3ed'><td>Rating Terendah</td></tr>
+                <tr align='center'><td>2.6</td></tr>
+              </table>
+            </div>
+            <div class="col-md-3" align="center">
+              <table border='1' cellspacing='0' cellpadding='5' align='center'>
+                <tr align='center' bgcolor='#63b3ed'><td>Rating Tertinggi</td></tr>
+                <tr align='center'><td>9.3</td></tr>
+              </table>
+            </div>
+            <div class="col-md-3" align="center">
+              <table border='1' cellspacing='0' cellpadding='5' align='center'>
+                <tr align='center' bgcolor='#63b3ed'><td>Rating Rata-Rata</td></tr>
+                <tr align='center'><td>6.838</td></tr>
+              </table>
+            </div>
+          </div>
+          </br></br>
+          <div class="row">
+            <div class="col-md-6" align="center">
+              <div id="collumn_chart"></div>
+            </div>
+            <div class="col-md-6" align="center">
+              <div id="pie_chart"></div>
+            </div>
+          </div>
+          </br>
+          <div class="row">
+            <div class="col-md-6" align="center">
+              <div id="bar_chart"></div>
+            </div>
+            <div class="col-md-6" align="center">
+              <div id="line_chart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+ </section>
+  
+  <!-- -------- START FOOTER 5 w/ DARK BACKGROUND ------- -->
+  <footer class="footer pt-5 mt-5">
+    <hr class="horizontal dark mb-5">
+    <div class="container">
+      <div class=" row">
+        <div class="mb-4 ms-auto">
+          <div>
+            <h6 class="text-gradient text-primary font-weight-bolder text-center">Proyek 1 - A2</h6>
+          </div>
+          <div>
+            <a class="nav-link pe-1 text-center" href="https://github.com/TwoGetherGroup" target="_blank">
+              <i class="fab fa-github text-lg opacity-8"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <p class="my-4 text-sm">
+              All rights reserved. Copyright © <script>
+                document.write(new Date().getFullYear())
+              </script> Designed by <a href="https://github.com/TwoGetherGroup" target="_blank">TwoGetherGr❤up</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- -------- END FOOTER 5 w/ DARK BACKGROUND ------- -->
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+  <script src="../assets/js/plugins/parallax.min.js"></script>
+  <!-- Control Center for Soft UI Kit: parallax effects, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script src="../assets/js/soft-design-system.min.js?v=1.0.3" type="text/javascript"></script>
+</body>
+
+</html>
