@@ -1,0 +1,294 @@
+<html>
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        var data = new google.visualization.DataTable();
+        var request = new XMLHttpRequest();
+        request.open("GET", "./dataimdb.json", false);
+        request.send(null)
+        var obj = JSON.parse(request.responseText);
+        
+        //console.log(obj);
+        data.addColumn('string', 'Year');
+        data.addColumn('number', 'Amount');
+        var count = 0;
+        for (const property in obj) {
+            if(parseInt(obj[property].Tahun, 10) < 2018){
+                count++;
+            }
+        }
+        data.addRow(["<2018", count]);
+        var i;
+        for(i = 2018; i <= 2022; i++){
+            var count = 0;
+            for (const property in obj) {
+                if(parseInt(obj[property].Tahun, 10) == i){
+                    count++;
+                }
+            }
+            data.addRow([i.toString(), count]);
+        }
+        
+        // Set chart options
+        var options = {'title':'Top 100 Movies Released per Year',
+                       'titleTextStyle':{
+                           fontSize: 15
+                       },
+                       'legend':{'position':'none'},
+                       'width':600,
+                       'height':300,
+                     'animation':{
+                         'duration': 1000,
+                         'startup': true,
+                         'easing':'inAndOut'
+                     },
+                     'tooltip':{
+                         'trigger':'selection'
+                     }};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.ColumnChart(document.getElementById('collumn_chart'));
+        chart.draw(data, options);
+      }
+    </script>
+
+<script type="text/javascript">
+
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', {'packages':['corechart']});
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      var request = new XMLHttpRequest();
+      request.open("GET", "./dataimdb.json", false);
+      request.send(null)
+      var obj = JSON.parse(request.responseText);
+      
+      //console.log(obj);
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Amount');
+      var count = 0;
+      for (const property in obj) {
+          if(parseInt(obj[property].Tahun, 10) < 2018){
+              count++;
+          }
+      }
+      data.addRow(["<2018", count]);
+      var i;
+      for(i = 2018; i <= 2022; i++){
+          var count = 0;
+          for (const property in obj) {
+              if(parseInt(obj[property].Tahun, 10) == i){
+                  count++;
+              }
+          }
+          data.addRow([i.toString(), count]);
+      }
+      
+      // Set chart options
+      var options = {'title':'Top 100 Movies Released per Year (by Percentage)',
+                     'titleTextStyle':{
+                        fontSize: 15
+                     },
+                     'width':600,
+                     'height':300,
+                     'tooltip':{
+                         'trigger':'selection'
+                     }};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+      chart.draw(data, options);
+    }
+  </script>
+
+<script type="text/javascript">
+
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', {'packages':['corechart']});
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      var request = new XMLHttpRequest();
+      request.open("GET", "./dataimdb.json", false);
+      request.send(null)
+      var obj = JSON.parse(request.responseText);
+      
+      //console.log(obj);
+      data.addColumn('string', 'Rating');
+      data.addColumn('number', 'Amount');
+      var count_array = [0,0,0,0,0,0,0,0,0,0,0];
+      for (const property in obj) {
+          var rate = parseInt(obj[property].Rating, 10);
+          if(isNaN(rate)){
+            count_array[0]++;
+          } else {
+            count_array[rate]++;
+          }
+      }
+      data.addRows([
+          ["Unrated", count_array[0]],
+          ["1.x", count_array[1]],
+          ["2.x", count_array[2]],
+          ["3.x", count_array[3]],
+          ["4.x", count_array[4]],
+          ["5.x", count_array[5]],
+          ["6.x", count_array[6]],
+          ["7.x", count_array[7]],
+          ["8.x", count_array[8]],
+          ["9.x", count_array[9]],
+          ["10", count_array[10]]
+
+        ]);
+    //   var i;
+    //   for(i = 2018; i <= 2022; i++){
+    //       var count = 0;
+    //       for (const property in obj) {
+    //           if(parseInt(obj[property].Tahun, 10) == i){
+    //               count++;
+    //           }
+    //       }
+    //       data.addRow([i.toString(), count]);
+    //   }
+      
+      // Set chart options
+      var options = {'title':'Top 100 Movies Rating',
+                     'titleTextStyle':{
+                        fontSize: 15
+                     },
+                     'legend':{'position':'none'},
+                     'width':600,
+                     'height':300,
+                     'animation':{
+                         'duration': 1000,
+                         'startup': true,
+                         'easing':'inAndOut'
+                     },
+                     'tooltip':{
+                         'trigger':'selection'
+                     }};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.BarChart(document.getElementById('bar_chart'));
+      chart.draw(data, options);
+    }
+  </script>
+
+<script type="text/javascript">
+
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', {'packages':['corechart']});
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      var request = new XMLHttpRequest();
+      request.open("GET", "./dataimdb.json", false);
+      request.send(null)
+      var obj = JSON.parse(request.responseText);
+      
+      //console.log(obj);
+      data.addColumn('string', 'Rating');
+      data.addColumn('number', 'Amount');
+      var count_rate = [0,0,0,0,0,0];
+      var count_year = [0,0,0,0,0,0];
+
+      //count film by year
+      for (const property in obj) {
+          var rate = parseFloat(obj[property].Rating, 10);
+          if(isNaN(rate)){
+              continue;
+          }
+          var year = parseInt(obj[property].Tahun, 10);
+          switch(year){
+              case 2022:
+              case 2021:
+              case 2020:
+              case 2019:
+              case 2018:
+                  count_year[year-2017]++;
+                  count_rate[year-2017] += rate;
+                  break;
+              default:
+                  count_year[0]++;
+                  count_rate[0] += rate;
+                  break;
+          }
+      }
+      console.log(count_rate);
+      console.log(count_year);
+      data.addRows([
+          ["<2018", count_rate[0]/count_year[0]],
+          ["2018", count_rate[1]/count_year[1]],
+          ["2019", count_rate[2]/count_year[2]],
+          ["2020", count_rate[3]/count_year[3]],
+          ["2021", count_rate[4]/count_year[4]],
+          ["2022", count_rate[5]/count_year[5]]
+        ]);
+
+      // Set chart options
+      var options = {'title':'Top 100 Movies Rating Average per Year',
+                     'titleTextStyle':{
+                        fontSize: 15
+                     },
+                     'legend':{'position':'none'},
+                     'width':600,
+                     'height':300,
+                     'animation':{
+                         'duration': 1000,
+                         'startup': true,
+                         'easing':'inAndOut'
+                     },
+                     'tooltip':{
+                         'trigger':'selection'
+                     }};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
+      chart.draw(data, options);
+    }
+  </script>
+    
+  </head>
+
+  <body>
+    <!--Div that will hold the pie chart-->
+    <div id="collumn_chart"></div>
+    <div id="pie_chart"></div>
+    <div id="bar_chart"></div>
+    <div id="line_chart"></div>
+  </body>
+</html>

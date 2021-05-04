@@ -39,7 +39,7 @@ Coded by www.creative-tim.com
         //mengambil data dari file headline.txt
         $.get('dataimdb.json',function(obj){
             var str = "<table border='1' cellspacing='0' cellpadding='5' align='center'>";
-            str+= "<tr align='center' bgcolor='#63b3ed'><td>No</td><td>Judul</td><td>Tahun</td><td>Rating</td><td>Gambar</td><td>Waktu Scraping</td></tr>";
+            str+= "<tr align='center' bgcolor='#63b3ed'><td>No</td><td>Gambar</td><td>Judul</td><td>Tahun</td><td>Rating</td><td>Waktu Scraping</td></tr>";
             //looping data headline
             $.each(obj,function(n,data){
                 
@@ -101,6 +101,9 @@ Coded by www.creative-tim.com
                       <a href="../pages/scraping2.html" class="dropdown-item border-radius-md">
                         <span class="ps-3">Data Scraping 2</span>
                       </a>
+                      <a href="../pages/datavisual.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Visualisasi Data</span>
+                      </a>
                     <div class="d-lg-none">
                       <a href="../pages/about-us.html" class="dropdown-item border-radius-md">
                         <span class="ps-3">Tentang Kami</span>
@@ -116,6 +119,9 @@ Coded by www.creative-tim.com
                       </a>
                       <a href="../pages/scraping2.html" class="dropdown-item border-radius-md">
                         <span class="ps-3">Data Scraping 2</span>
+                      </a>
+                      <a href="../pages/datavisual.html" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Visualisasi Data</span>
                       </a>
                     </div>
                   </div>
