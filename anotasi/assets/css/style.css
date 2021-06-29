@@ -534,55 +534,55 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# Services
 --------------------------------------------------------------*/
-.about .content {
+.services .content {
   padding: 30px 0;
 }
 
-.about .content h3 {
+.services .content h3 {
   font-weight: 700;
   font-size: 34px;
   color: #213b52;
 }
 
-.about .content p {
+.services .content p {
   margin-bottom: 0;
 }
 
-.about .content .icon-box {
+.services .content .icon-box {
   margin-top: 25px;
 }
 
-.about .content .icon-box h4 {
+.services .content .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 5px 0 10px 60px;
   color: #213b52;
 }
 
-.about .content .icon-box h4 a {
+.services .content .icon-box h4 a {
   color: #213b52;
   transition: 0.3s;
 }
 
-.about .content .icon-box h4 a:hover {
+.services .content .icon-box h4 a:hover {
   color: #fdc134;
 }
 
-.about .content .icon-box i {
+.services .content .icon-box i {
   font-size: 48px;
   float: left;
   color: #fdc134;
 }
 
-.about .content .icon-box p {
+.services .content .icon-box p {
   font-size: 15px;
   color: #848484;
   margin-left: 60px;
 }
 
-.about .image {
+.services .image {
   background: url("../img/about.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
@@ -595,13 +595,13 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Team
 --------------------------------------------------------------*/
-.services {
+.team {
   padding-bottom: 40px;
 }
 
-.services .card {
+.team .card {
   border: 0;
   padding: 0 30px;
   margin-bottom: 60px;
@@ -609,7 +609,7 @@ section {
   background: transparent;
 }
 
-.services .card-img {
+.team .card-img {
   width: calc(100% + 60px);
   margin-left: -30px;
   overflow: hidden;
@@ -617,12 +617,12 @@ section {
   border-radius: 0;
 }
 
-.services .card-img img {
+.team .card-img img {
   max-width: 100%;
   transition: all 0.3s ease-in-out;
 }
 
-.services .card-body {
+.team .card-body {
   z-index: 10;
   background: #fff;
   border-top: 4px solid #fff;
@@ -632,22 +632,30 @@ section {
   transition: 0.3s;
 }
 
-.services .card-title {
+.team .card-title {
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.services .card-title a {
+.team .card-title a {
   color: #213b52;
   transition: 0.3s;
 }
 
-.services .card-text {
+.team .card-text {
   color: #5e5e5e;
 }
 
-.services .read-more a {
+.team .card-text a {
+  color: #5e5e5e;
+}
+
+.team .card-text a:hover {
+  color: #fdd067;
+}
+
+.team .read-more a {
   color: #777777;
   text-transform: uppercase;
   font-weight: 600;
@@ -655,19 +663,19 @@ section {
   transition: 0.3s;
 }
 
-.services .read-more a:hover {
+.team .read-more a:hover {
   color: #fdc134;
 }
 
-.services .card:hover img {
+.team .card:hover img {
   transform: scale(1.1);
 }
 
-.services .card:hover .card-body {
+.team .card:hover .card-body {
   border-color: #fdc134;
 }
 
-.services .card:hover .card-body .card-title a {
+.team .card:hover .card-body .card-title a{
   color: #fdc134;
 }
 
@@ -680,34 +688,34 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Features
+# Graph
 --------------------------------------------------------------*/
-.features .content + .content {
+.graph .content + .content {
   margin-top: 100px;
 }
 
-.features .content h3 {
+.graph .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #213b52;
 }
 
-.features .content ul {
+.graph .content ul {
   list-style: none;
   padding: 0;
 }
 
-.features .content ul li {
+.graph .content ul li {
   padding-bottom: 10px;
 }
 
-.features .content ul i {
+.graph .content ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #fdc134;
 }
 
-.features .content p:last-child {
+.graph .content p:last-child {
   margin-bottom: 0;
 }
 
