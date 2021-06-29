@@ -1,7 +1,7 @@
 <?php
 
 $ch = $_GET['ch'];
-if(!isset($_GET['ch'])){
+if(!isset($_GET['ch']) || $ch < 0 || $ch >= 100){
   header("location: index.html");
   exit();
 }
@@ -15,7 +15,7 @@ if(!isset($_GET['ch'])){
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Bocor Bootstrap Template - Index</title>
+  <title>2GetherGroup - Channel</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -35,6 +35,7 @@ if(!isset($_GET['ch'])){
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -149,6 +150,72 @@ if(!isset($_GET['ch'])){
     }
   </script>
 
+<script type="text/javascript">
+
+// Load the Visualization API and the corechart package.
+google.charts.load('current', {'packages':['corechart']});
+
+// Set a callback to run when the Google Visualization API is loaded.
+google.charts.setOnLoadCallback(drawChart);
+
+// Callback that creates and populates a data table,
+// instantiates the pie chart, passes in the data and
+// draws it.
+function drawChart() {
+  var ch = <?php echo $ch; ?>;
+  var data = new google.visualization.DataTable();
+  var request = new XMLHttpRequest();
+  request.open("GET", "./datafinal.json", false);
+  request.send(null)
+  var obj = JSON.parse(request.responseText);
+  obj = obj[ch];
+
+  data.addColumn('string', 'Category');
+  data.addColumn('number', 'Channel Amount');
+  var category_count = [];
+  for(let i = 0; i < flt_cod.length; i++){
+    category_count[i] = 0;
+  }
+
+  //get all categories
+  for(let j = 0; j < obj.videos.length; j++){
+    
+    //compare to list categories
+    for(let i = 0; i < flt_cod.length; i++){
+      if(flt_cod[i].localeCompare(obj.videos[j].category) == 0){
+        //add increment to category_count
+        category_count[i]++;
+        break;
+      }
+    }
+  }
+
+  for(let i = 0; i < flt_str.length; i++){
+    data.addRow([flt_str[i], category_count[i]]);
+  }
+
+  // Set chart options
+  var options = {'title':'Category Per Video in this channel\'s content.',
+                 'titleTextStyle':{
+                    fontSize: 17
+                 },
+                 'height':400,
+                 'legend':{'position':'none'},
+                 'animation':{
+                     'duration': 1000,
+                     'startup': true,
+                     'easing':'inAndOut'
+                 },
+                 'tooltip':{
+                     'trigger':'selection'
+                 }};
+
+  // Instantiate and draw our chart, passing in some options.
+  var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+  chart.draw(data, options);
+}
+</script>
+
   <!-- =======================================================
   * Template Name: Bocor - v4.3.0
   * Template URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
@@ -165,37 +232,18 @@ if(!isset($_GET['ch'])){
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html">Bocor<span>.</span></a></h1>
+        <h1><a href="index.html">2GetherGroup<span>.</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#features">Features</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#graph">Chart</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#portfolio">Channel</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -208,15 +256,11 @@ if(!isset($_GET['ch'])){
 
     <div class="container">
       <div class="row d-flex align-items-center">
-      <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
-        <h1>Your new digital experience with Bocor</h1>
-        <h2>We are team of talented designers making websites with Bootstrap</h2>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <div class="offset-lg-3 col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-up">
+          <img src="assets/img/Logo polos.png" class="img-fluid" alt="">
+        </div>
+        <a></a>
       </div>
-      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
-        <img src="assets/img/hero-img.png" class="img-fluid" alt="">
-      </div>
-    </div>
     </div>
 
   </section><!-- End Hero -->
@@ -226,8 +270,8 @@ if(!isset($_GET['ch'])){
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
-        <div id="channel-desc" class="section-title">
-        </div>
+        <div id="channel-desc" class="section-title" data-aos="fade-up"></div>
+        <div id="pie_chart" class="offset-lg-3 col-lg-6" data-aos="fade-up"></div>
 
         <div class="row">
           <div class="col-lg-12">
@@ -252,25 +296,12 @@ if(!isset($_GET['ch'])){
 
         <div class="row  justify-content-center">
           <div class="col-lg-6">
-            <h3>Bocor</h3>
-            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-          </div>
-        </div>
-
-        <div class="row footer-newsletter justify-content-center">
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
-            </form>
+            <h3>2GETHERGROUP</h3>
           </div>
         </div>
 
         <div class="social-links">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/twogethergroup/" class="github"><i class="bx bxl-github"></i></a>
         </div>
 
       </div>
@@ -278,14 +309,14 @@ if(!isset($_GET['ch'])){
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Bocor</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Bocor</span></strong>. Modified by 2GetherGroup
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Modified by <a href="https://github.com/twogethergroup/">TwoGetherGroup</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -302,11 +333,6 @@ if(!isset($_GET['ch'])){
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script> 
-
-  
-
-  
-
 </body>
 
 </html>
